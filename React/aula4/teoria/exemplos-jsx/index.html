@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 
+     Não podemos esquecer que temos que importar as libs iniciais do React 
+     No caso, devemos ir na documentação oficial e pegar o CDN Links
+     https://pt-br.reactjs.org/docs/cdn-links.html
+     Importar os arquivos necessários.
+   -->
+  <div id="app"></div>
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script>
+    const container = document.querySelector('#app');
+    ReactDOM.render(      //tag, attr , conteudo
+      React.createElement('h1', null, 
+        React.createElement('span', null, 'Olá eu sou H1!'),
+          React.createElement('p', null, 'Olá eu sou React!'),
+      ),
+      container
+    )
+
+  </script>
+</body>
+</html>

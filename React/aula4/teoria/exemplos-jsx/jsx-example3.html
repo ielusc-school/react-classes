@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 
+    Aqui vamos entender sobre o uso do Scape para interpolarção.
+    Vamos adotar map para percorrer os itens da nossa  lista
+   -->
+  <div id="app"></div>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script type="text/jsx">
+    const container = document.querySelector('#app');
+    const lista = [
+      {name: 'joao'}, 
+      {name:'gabriel'}, 
+      {name:'daniel'}, 
+      {name:'rafael'}, 
+      {name:'ana'}, 
+      {name:'mel'}
+    ];
+    ReactDOM.render(
+     <div>
+       <ul>
+        {
+          lista.map(item => <li key={item.toString()}> {item.name} </li>)
+        }
+       </ul>
+     </div>,
+     container
+    );
+  </script>
+</body>
+</html>
