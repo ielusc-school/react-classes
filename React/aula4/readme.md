@@ -4,9 +4,10 @@
 ### Sumário
 
 1. História e Conceitos
-1.1 - O que é React?
-1.2 - O que é Virtual-Dom?
 
+   1.1 - O que é React?
+   
+   1.2 - O que é Virtual-Dom?
 2. Configuração
 3. O que é JSX
 4. Renderização
