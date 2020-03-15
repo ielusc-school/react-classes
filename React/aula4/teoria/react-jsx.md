@@ -1,4 +1,4 @@
-JSX 
+### JSX 
 
 [Documentação OFicial](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
@@ -17,28 +17,30 @@ JSX
 
 
 
-O que é JSX?
+#### O que é JSX?
 O JSX nos permite escrever algo como HTML (ou XML) no meio do nosso código JavaScript, que após transpilado produz elementos do React.
 
 É uma extensão que nos permite escrever código parecido com XML no meio do JavaScript.
 
-
-
+```
 const myTitle = "TreinaWeb";
 <div>{ myTitle }</div>
 
+```
 
-Sintaxe do JSX
+> Sintaxe do JSX
+
 Para dar um "escape" para executar JavaScript, basta usar chaves:
 
 Condições precisam ser escritas com operadores ternários:
 
+```
 <button>
     {
         isOpen ? "Fechar" : "Abrir"
     }
 </button>
-
+```
 
 Por ser JavaScript, comentários devem ser escritos como comentários de JavaScript, e não HTML.
 
@@ -59,7 +61,7 @@ Os atributos são escritos em camelCase, como o onclick:
 
 
 
-> O que é transpilação?
+### O que é transpilação?
 
 Na aula passada vimos sobre o JSX, mas ele não é suportado pelos navegadores. Temos que fazer uma transpilação do nosso código para JavaScript, permitindo que o navegador entenda nosso código.
 
