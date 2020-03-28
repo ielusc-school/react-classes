@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import './Calculator.css';
 // como iremos usar estados vamos ter que usar class....
 import Button from '../components/button/Button';
+import Display from '../components/display/Display';
 
 export default class Calculator extends Component {
   render () {
     return (
       <div className="calculator">
+        <Display value="9990"/>
         <Button label="AC"/>
         <Button label="/"/>
         <Button label="7"/>

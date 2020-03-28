@@ -1,0 +1,21 @@
+:root {
+  --bg-display: #2d3436;
+  --text-default: #fdcb6e;
+  --text-size: 2em;
+  --border-display: #b2bec3;
+}
+
+.display {
+  background-color: var(--bg-display);
+  border: 1px solid var(--border-display);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  grid-column: span 4;
+  color: var(--text-default);
+  font-size: var(--text-size);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
