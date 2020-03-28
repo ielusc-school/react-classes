@@ -1,0 +1,27 @@
+:root {
+  --bg-btn-ligth: #b2bec3;
+  --btn-defaultBorder:1px solid #636e72;
+  --bg-btn-dark: #636e72;
+  --color-light: #dfe6e9;
+  --bg-btn-hover: #ffeaa7;
+}
+
+.button {
+  color: var(--color-light);
+  background-color: var(--bg-btn-dark);
+  border: none;
+  border-right:1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-light);
+  font-size: 1.4em;
+  outline: none;
+}
+
+.button:hover{
+  color: var(--bg-btn-hover);
+  background-color: var(--bg-btn-ligth);
+  border: none;
+  border-right: var(--btn-defaultBorder);
+  border-bottom: var(--btn-defaultBorder);;
+  font-size: 1.4em;
+  cursor: pointer;
+}
