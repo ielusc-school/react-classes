@@ -4,19 +4,23 @@
   --bg-btn-dark: #636e72;
   --color-light: #dfe6e9;
   --bg-btn-hover: #ffeaa7;
+  --btn-bg-operator: #fdcb6e;
+  --btn-bg-operatorActive: #fdcb6ecc;
+
 }
 
 .button {
-  color: var(--color-light);
-  background-color: var(--bg-btn-dark);
+  color: #2c3e50;
+  background-color: #ecf0f1;
   border: none;
-  border-right:1px solid var(--color-light);
-  border-bottom: 1px solid var(--color-light);
+  border-right:1px solid #2c3e50;
+  border-bottom: 1px solid #2c3e50;
   font-size: 1.4em;
   outline: none;
+  cursor: pointer;
 }
 
-.button:hover{
+.button:active{
   color: var(--bg-btn-hover);
   background-color: var(--bg-btn-ligth);
   border: none;
@@ -24,4 +28,22 @@
   border-bottom: var(--btn-defaultBorder);;
   font-size: 1.4em;
   cursor: pointer;
+}
+
+.button.double {
+  grid-column: span 2;
+}
+
+.button.triple {
+  grid-column: span 3;
+}
+
+.button.operation {
+  font-size: 1.4em;
+  background-color: #e67e22;
+  color: #ffffff;
+}
+
+.button.operation:active{
+  background-color: #f39c12cc;
 }
