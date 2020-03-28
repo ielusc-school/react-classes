@@ -1,0 +1,9 @@
+
+
+.calculator {
+  height: 400px;
+  width: 435px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: red;
+}

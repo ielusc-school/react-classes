@@ -1,0 +1,15 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: #73C8A9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #373B44, #73C8A9);  
+  background: linear-gradient(to right, #373B44, #73C8A9);
+}
