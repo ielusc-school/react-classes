@@ -14,7 +14,6 @@ const initialState = {
 }
 
 export default class Calculator extends Component {
-
   // state começa a receber todo o meu objeto initialState
   state = {...initialState}; //  spread operator...
 
@@ -35,8 +34,30 @@ export default class Calculator extends Component {
   }
 
   setOperation(operation) {
-    console.log('operacao', operation);
+    if(this.state.current === 0) {
+      this.setState({ operation, current: 1, clearDisplay: true })
+    } else {
+      const equals = operation === '=';
+      const currentOperation = this.state.operation;
+      const values = [... this.state.values];
+      try {
+        values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`)
+      } catch(error) {
+        values[0] = this.state.values[0];
+      }
+
+      values[1] = 0; 
+
+      this.setState({
+        displayValue: values[0],
+        clearDisplay: !equals,
+        operation: equals ? null : operation,
+        values,
+        current: equals ? 0 : 1
+    });
+    console.log(operation);
   }
+}
 
   addDigit(n) {
     // evitando que seja adicionado consecutivamente 1.. 
@@ -71,7 +92,7 @@ export default class Calculator extends Component {
         <Button label="7" click={this.addDigit}/>
         <Button label="8" click={this.addDigit}/>
         <Button label="9" click={this.addDigit}/>
-        <Button label="x" click={this.setOperation} operation/>
+        <Button label="*" click={this.setOperation} operation/>
         <Button label="4" click={this.addDigit}/>
         <Button label="5" click={this.addDigit}/>
         <Button label="6" click={this.addDigit}/>
