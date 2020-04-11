@@ -6,7 +6,7 @@ import React from 'react';
 
 import Logo from '../components/template/logo/Logo';
 import NavBar from '../components/template/nav/Nav';
-import Main from '../components/template/main/Main';
+import Home from '../components/template/home/Home';
 import Footer from '../components/template/footer/Footer';
 
 
@@ -14,9 +14,6 @@ export default props =>
 <div className="app">
   <Logo />
   <NavBar />
-  <Main 
-    icon="home" 
-    title="Início" 
-    subtitle="Legenda da minha página" />
+  <Home />
   <Footer />
 </div>
