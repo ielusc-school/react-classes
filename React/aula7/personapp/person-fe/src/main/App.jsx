@@ -8,7 +8,7 @@ import Footer from '../components/template/footer/Footer';
 
 
 export default props =>
-<div className="App">
+<div className="app">
   <Logo />
   <NavBar />
   <Main />
