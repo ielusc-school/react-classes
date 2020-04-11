@@ -68,7 +68,8 @@ adicione as seguintes libs em `dependencies`:
 
 16. Abra o diretório `src/main` vamos brincar com o App.css
 
-
+17. Vamos trabalhar agora com o Logo da nossa aplicação.
+ 1. Crie um diretório novo dentro de `src` com o nome `assets`
 
 
 
