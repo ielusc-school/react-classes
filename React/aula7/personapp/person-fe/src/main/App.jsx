@@ -4,16 +4,22 @@ import 'font-awesome/css/font-awesome.min.css'
 import './App.css';
 import React from 'react';
 
+
+// import { HashRouter } from 'react-router-dom'; // usando hashrouter
+
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './Routes';
+
 import Logo from '../components/template/logo/Logo';
 import NavBar from '../components/template/nav/Nav';
-import Home from '../components/template/home/Home';
 import Footer from '../components/template/footer/Footer';
 
-
 export default props =>
-<div className="app">
-  <Logo />
-  <NavBar />
-  <Home />
-  <Footer />
-</div>
+  <BrowserRouter>
+    <div className="app">
+      <Logo />
+      <NavBar />
+      <Routes />
+      <Footer />
+    </div>
+  </BrowserRouter>
