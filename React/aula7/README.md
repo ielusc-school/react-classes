@@ -66,5 +66,10 @@ adicione as seguintes libs em `dependencies`:
   logo.svg
 ```
 
+16. Abra o diretório `src/main` vamos brincar com o App.css
+
+
+
+
 
 
