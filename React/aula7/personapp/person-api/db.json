@@ -1,12 +1,19 @@
 {
-  "users": [{
-  "id": 1,
-  "name": "Cristofer Sousa",
-  "email": "cristofer.sousa@ielusc.br"
-  },
-  {
-    "id": 2,
-    "name": "Carlos Santos",
-    "email": "carlos.santos@ielusc.br"
-  }]
+  "users": [
+    {
+      "id": 1,
+      "name": "Cristofer Sousa",
+      "email": "cristofer.sousa@ielusc.br"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Santos",
+      "email": "carlos.santos@ielusc.br"
+    },
+    {
+      "name": "Julio Rodrigues",
+      "email": "julio.silva@terra.com.br",
+      "id": 3
+    }
+  ]
 }
