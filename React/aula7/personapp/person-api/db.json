@@ -7,13 +7,23 @@
     },
     {
       "id": 2,
-      "name": "Carlos Santos",
-      "email": "carlos.santos@ielusc.br"
+      "name": "alexandre zamperlini",
+      "email": "alexandre.zamperlini@ielusc.br"
     },
     {
       "name": "Julio Rodrigues",
       "email": "julio.rodrigues@terra.com.br",
       "id": 3
+    },
+    {
+      "name": "Stephani escrito de forma errada",
+      "email": "stephanie.ielusc@gmail.br",
+      "id": 4
+    },
+    {
+      "name": "Willian Serafim Jr",
+      "email": "will@ielusc.br",
+      "id": 5
     }
   ]
 }
